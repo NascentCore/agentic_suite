@@ -1,8 +1,11 @@
 # Privacy Filter Contract Experiment — Results
 
+> **Future reference:** See [`NOTES.md`](NOTES.md) for reproduction steps, technical caveats, and policy notes.
+
 **Run date:** 2026-06-05  
 **Model:** `openai/privacy-filter` (default preset, CPU)  
-**Document:** 蓝耘-算想-软件委托开发合同-20230719 (~9,149 chars)
+**Document:** 蓝耘-算想-软件委托开发合同-20230719 (~9,149 chars)  
+**Status:** Completed — Tier A recall target met (≥95%)
 
 ## Summary
 

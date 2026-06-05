@@ -210,4 +210,21 @@ Verify summary **does not** leak Tier A strings while preserving commercial mean
 
 ---
 
+## 12. Actual results (2026-06-05 run)
+
+Executed per this protocol. Full artifacts under `evals/privacy_filter_run/`.
+
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Tier A critical recall | ≥ 95% | **100%** (5/5 groups, 7 spans) |
+| Tier C false positives | ≥ 98% precision | **100%** (0 FP) |
+| Latency (CPU) | < 2 s (GPU target) | 240.6 s (CPU; re-benchmark on GPU) |
+
+**Detected:** 赵亚雄, address, phone ×2, email, bank account, plus USCC `91110108MACOABHJ7A`.  
+**Preserved:** project name, company name, law citations, contract amounts.
+
+See `evals/privacy_filter_run/RESULTS.md` and `evals/privacy_filter_run/NOTES.md`.
+
+---
+
 *Attachment: 蓝耘-算想-软件委托开发合同-20230719 (uploaded markdown). Primary contact PII concentrated in §合同联系方式; financial identifier in §乙方指定收款账号.*
