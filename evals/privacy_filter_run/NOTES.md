@@ -74,11 +74,11 @@ Re-score after re-run by adapting the scoring script in commit `1240d5e` or by c
 
 | ID | Span | Label | Section |
 |----|------|-------|---------|
-| A1 | 赵亚雄 | `private_person` | 合同联系方式 |
-| A2 | 北京市海淀区黑泉路12号康健宝盛广场C座1层 | `private_address` | 合同联系方式 |
-| A3 | 15910236560 (mobile + 微信) | `private_phone` | 合同联系方式 |
-| A4 | z@nascentcore.ai | `private_email` | 合同联系方式 |
-| A5 | 1109 5105 0510 211 | `account_number` | 乙方指定收款账号 |
+| A1 | 张三 | `private_person` | 合同联系方式 |
+| A2 | 北京市朝阳区示例路1号示例大厦A座1层 | `private_address` | 合同联系方式 |
+| A3 | 13800138000 (mobile + 微信) | `private_phone` | 合同联系方式 |
+| A4 | example@example.com | `private_email` | 合同联系方式 |
+| A5 | 1234 5678 9012 345 | `account_number` | 乙方指定收款账号 |
 
 **Actual run:** 5/5 groups, 7 literal span occurrences — **100% recall**.
 
@@ -102,7 +102,7 @@ All preserved in actual run: 云原生大模型训练平台, PyTorch+DeepSpeed, 
 
 ### 1. Input format matters
 
-The contract was stored as **markdown** with escaped punctuation (`\.`, `\(`, `\)`). Privacy Filter still detected the email span as `z@nascentcore\.ai`. Regex email patterns failed because of the escaped dot. For production, normalize source text (plain UTF-8 `.docx`/`.txt` export) before redaction.
+The contract was stored as **markdown** with escaped punctuation (`\.`, `\(`, `\)`). Privacy Filter still detected the email span as `example@example\.ai`. Regex email patterns failed because of the escaped dot. For production, normalize source text (plain UTF-8 `.docx`/`.txt` export) before redaction.
 
 ### 2. Model is not on PyPI as `opf`
 

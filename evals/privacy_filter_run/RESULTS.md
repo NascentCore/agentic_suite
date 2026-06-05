@@ -21,11 +21,11 @@
 
 | Label | Text | Gold tier |
 |-------|------|-----------|
-| `private_person` | 赵亚雄 | A1 ✓ |
-| `private_address` | 北京市海淀区黑泉路12号康健宝盛广场C座1层 | A2 ✓ |
-| `private_phone` | 15910236560 (×2) | A3 ✓ |
-| `private_email` | z@nascentcore.ai | A4 ✓ |
-| `account_number` | 1109 5105 0510 211 | A5 ✓ |
+| `private_person` | 张三 | A1 ✓ |
+| `private_address` | 北京市朝阳区示例路1号示例大厦A座1层 | A2 ✓ |
+| `private_phone` | 13800138000 (×2) | A3 ✓ |
+| `private_email` | example@example.com | A4 ✓ |
+| `account_number` | 1234 5678 9012 345 | A5 ✓ |
 | `account_number` | 91110108MACOABHJ7A | B1 (bonus) |
 
 ## Preserved (not masked)
