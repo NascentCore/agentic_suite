@@ -1,0 +1,84 @@
+{
+  "model": "openai/privacy-filter (default, CPU)",
+  "document_chars": 9149,
+  "latency_ms": 240612.4,
+  "latency_sec": 240.6,
+  "spans_detected": 7,
+  "by_label": {
+    "account_number": 2,
+    "private_address": 1,
+    "private_email": 1,
+    "private_person": 1,
+    "private_phone": 2
+  },
+  "tier_a_critical_recall": 1.0,
+  "tier_a_hits": [
+    "A1",
+    "A2",
+    "A4",
+    "A5",
+    "A3"
+  ],
+  "tier_a_misses": [],
+  "tier_a_recall_pct": 100.0,
+  "extra_detection": "91110108MACOABHJ7A (USCC as account_number)",
+  "negative_controls_preserved": true,
+  "regex_baseline": {
+    "phone": true,
+    "email": false,
+    "bank": true,
+    "person": true
+  },
+  "regex_misses_person_name": false,
+  "detected_spans": [
+    {
+      "label": "account_number",
+      "start": 108,
+      "end": 126,
+      "text": "91110108MACOABHJ7A",
+      "placeholder": "<ACCOUNT_NUMBER>"
+    },
+    {
+      "label": "account_number",
+      "start": 1719,
+      "end": 1737,
+      "text": "1109 5105 0510 211",
+      "placeholder": "<ACCOUNT_NUMBER>"
+    },
+    {
+      "label": "private_person",
+      "start": 7471,
+      "end": 7474,
+      "text": "赵亚雄",
+      "placeholder": "<PRIVATE_PERSON>"
+    },
+    {
+      "label": "private_address",
+      "start": 7481,
+      "end": 7503,
+      "text": "北京市海淀区黑泉路12号康健宝盛广场C座1层",
+      "placeholder": "<PRIVATE_ADDRESS>"
+    },
+    {
+      "label": "private_phone",
+      "start": 7510,
+      "end": 7521,
+      "text": "15910236560",
+      "placeholder": "<PRIVATE_PHONE>"
+    },
+    {
+      "label": "private_phone",
+      "start": 7527,
+      "end": 7538,
+      "text": "15910236560",
+      "placeholder": "<PRIVATE_PHONE>"
+    },
+    {
+      "label": "private_email",
+      "start": 7548,
+      "end": 7565,
+      "text": "z@nascentcore\\.ai",
+      "placeholder": "<PRIVATE_EMAIL>"
+    }
+  ]
+}
